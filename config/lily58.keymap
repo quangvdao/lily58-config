@@ -72,7 +72,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans     &trans          &kp MINUS         &kp EQUAL          &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans  &kp EQUAL  &kp MINUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &kp PLUS   &kp UNDERSCORE  &trans            &trans             &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &kp PLUS   &kp UNDERSCORE  &kp LEFT_BRACE            &kp RIGHT_BRACE             &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans     &trans          &trans            &trans             &trans
                                         &trans        &trans        &trans        &trans    &trans  &trans  &trans     &trans
             >;
@@ -84,7 +84,7 @@
             display-name = "Arrows";
             bindings = <
 &trans  &trans         &trans       &trans     &trans    &trans                      &trans  &trans    &trans    &trans        &trans        &trans
-&trans  &trans         &kp LS(TAB)  &kp TAB    &trans    &trans                      &trans  &trans    &kp UP    &kp LG(LBKT)  &kp LG(RBKT)  &trans
+&trans  &kp ESC         &kp LS(TAB)  &kp TAB    &trans    &trans                      &trans  &trans    &kp UP    &kp LG(LBKT)  &kp LG(RBKT)  &trans
 &trans  &to 0          &kp LSHFT    &kp LCTRL  &kp LALT  &kp LGUI                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT     &kp RET       &trans
 &trans  &kp LC(SPACE)  &trans       &trans     &trans    &trans    &trans    &trans  &trans  &kp RGUI  &kp RALT  &kp RCTRL     &trans        &trans
                                     &trans     &trans    &trans    &trans    &trans  &trans  &trans    &trans
@@ -98,8 +98,8 @@
             bindings = <
 &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans          &trans           &kp LG(MINUS)   &kp LG(EQUAL)    &trans            &trans
 &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &trans          &msc SCRL_RIGHT  &mmv MOVE_UP    &msc SCRL_LEFT   &trans            &trans
-&tog 2  &to 0   &mkp RCLK       &kp UP          &mkp LCLK        &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LA(LC(C))     &kp LC(LA(ENTER))
-&trans  &trans  &kp LEFT        &kp DOWN        &kp RIGHT        &trans  &trans    &trans  &msc SCRL_UP    &mkp LCLK        &mkp RCLK       &mkp MCLK        &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
+&tog 2  &to 0   &mkp RCLK       &kp UP          &mkp LCLK        &kp HOME                    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LA(LC(C))     &kp LC(LA(ENTER))
+&trans  &trans  &kp LEFT        &kp DOWN        &kp RIGHT        &kp END  &trans    &trans  &msc SCRL_UP    &mkp LCLK        &mkp RCLK       &mkp MCLK        &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))
                                 &trans          &trans           &trans  &trans    &trans  &trans          &trans           &trans
             >;
 
